@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja com Stripe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Carrinho de Compras</h1>
+        <div id="cart">
+            <div class="product">
+                <span class="product-name">Produto 1</span>
+                <span class="product-price">R$50,00</span>
+                <button class="add-to-cart" data-id="prod_Q6ceiyIzLnpKY0" data-price="5000">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <span class="product-name">Produto 2</span>
+                <span class="product-price">R$30,00</span>
+                <button class="add-to-cart" data-id="prod_Q72EQ9wpHgB9fC" data-price="3000">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <h2>Total: <span id="total">R$0,00</span></h2>
+        <button id="checkout-button">Pagar com Stripe</button>
+    </div>
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
